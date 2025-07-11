@@ -4,12 +4,13 @@ export default function Header({ name, score }) {
     <div className="header">
       <div className="name">
         {type.map((choice) => (
-          <p> {choice.toUpper()} </p>
+          <p>{choice.toUpperCase()}</p>
         ))}
       </div>
+
       <div className="score">
         <p>SCORE</p>
-        <p className="score">{score}</p>
+        <p className="score-no">{score}</p>
       </div>
     </div>
   );

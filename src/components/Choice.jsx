@@ -1,11 +1,7 @@
-export default function Choice({ iconUrl, iconName, borderColor }) {
+export default function Choice({ iconName, iconUrl }) {
   return (
     <button className="choice">
-      <img
-        src={iconUrl}
-        alt={iconName}
-        className={`${iconName} ${borderColor}`}
-      />
+      <img src={iconUrl} alt={iconName} className={iconName} />
     </button>
   );
 }

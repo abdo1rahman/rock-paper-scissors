@@ -1,5 +1,3 @@
-import Choice from "./Choice.jsx";
-
-export default function Game({ gameType }) {
-  return <div className={gameType ? "pentagon" : "triangle"}></div>;
+export default function Game({ gameType, children }) {
+  return <div className={gameType ? "pentagon" : "triangle"}>{children}</div>;
 }
