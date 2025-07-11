@@ -13,3 +13,12 @@ $lizard-from: hsl(261 73% 60%);
 $lizard-to: hsl(261 72% 63%);
 $spock-from: hsl(189 59% 53%);
 $spock-to: hsl(189 58% 57%);
+
+
+body {
+  background: radial-gradient(
+    circle farthest-side at top center,
+    $bg-from,
+    $bg-to
+  );
+}
