@@ -1,17 +1,18 @@
-export default function Header({ name, score }) {
-  const type = name.split(" ");
-  return (
-    <div className="header">
-      <div className="name">
-        {type.map((choice) => (
-          <p>{choice.toUpperCase()}</p>
-        ))}
-      </div>
+import "./Header.scss";
 
-      <div className="score">
-        <p>SCORE</p>
-        <p className="score-no">{score}</p>
+export default function Header({ name, score }) {
+  return (
+    <header>
+      <div className="header">
+        <div className="name">
+          <p>{name.toUpperCase()}</p>
+        </div>
+
+        <div className="score">
+          <p>SCORE</p>
+          <p className="score-no">{score}</p>
+        </div>
       </div>
-    </div>
+    </header>
   );
 }

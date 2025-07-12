@@ -8,26 +8,3 @@
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 }
 
-.header {
-  border: 2px solid gray;
-  border-radius: 10px;
-  width: 60%;
-  align-self: center;
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  padding: 1rem;
-  > .name {
-    display: inline-flex;
-    flex-direction: column;
-    gap: 1px;
-    
-    * {
-      line-height:normal;
-    }
-    .score {
-      display: inline-flex;
-      flex-direction: column;
-    }
-  }
-}
